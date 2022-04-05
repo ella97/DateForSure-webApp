@@ -6,16 +6,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './layouts/default/default.module';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { RegisterComponent } from './modules/register/register.component';
+import { PersonalComponent } from './modules/personal/personal.component';
+import { PaymentComponent } from './modules/payment/payment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
+    RegisterComponent,
+    PersonalComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule, 
