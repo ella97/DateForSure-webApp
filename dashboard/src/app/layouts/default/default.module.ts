@@ -6,6 +6,10 @@ import { RouterModule } from '@angular/router';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { PaymentComponent } from 'src/app/modules/payment/payment.component';
+import { PersonalComponent } from 'src/app/modules/personal/personal.component';
+import { RegisterComponent } from 'src/app/modules/register/register.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 
@@ -13,13 +17,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   declarations: [
     DefaultComponent,
     DashboardComponent,
-    PostsComponent
+    PostsComponent,
+    RegisterComponent,
+    PersonalComponent,
+    PaymentComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
   ]
 })
 export class DefaultModule { }
