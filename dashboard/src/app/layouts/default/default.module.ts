@@ -10,6 +10,11 @@ import { PaymentComponent } from 'src/app/modules/payment/payment.component';
 import { PersonalComponent } from 'src/app/modules/personal/personal.component';
 import { RegisterComponent } from 'src/app/modules/register/register.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { DashboardService } from 'src/app/modules/dashboard.service';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -28,6 +33,13 @@ import { MatDividerModule } from '@angular/material/divider';
     SharedModule,
     MatSidenavModule,
     MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatTableModule
+  ],
+  providers: [
+    DashboardService
   ]
 })
 export class DefaultModule { }
